@@ -647,5 +647,3 @@ The evidence contradicts claims of algorithmic neutrality and demonstrates that 
 **Accuracy:** While extensive care was taken to ensure accuracy, readers should verify findings independently and consider this analysis as one perspective on the algorithmic evidence.
 
 ---
-*Research conducted by analyzing X's open-source algorithm repository on March 1, 2026<br>
-Includes detailed technical deep-dive analysis*
