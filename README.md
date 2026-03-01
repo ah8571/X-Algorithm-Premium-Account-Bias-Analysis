@@ -118,7 +118,7 @@ This research is released under the MIT License to encourage sharing, citation, 
 
 ## Contributing
 
-While this analysis is complete, contributions are welcome for:
+As this analysis is preliminary, contributions are welcome for:
 - Independent verification of findings
 - Additional evidence discovery  
 - Methodology improvements
