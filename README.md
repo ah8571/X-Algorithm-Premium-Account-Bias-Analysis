@@ -3,7 +3,7 @@
 **Independent technical analysis revealing systematic algorithmic bias favoring X (Twitter) premium subscribers**
 
 [![Research](https://img.shields.io/badge/Research-Technical%20Analysis-blue)](analysis/X_Algorithm_Premium_Account_Research.md)
-[![Status](https://img.shields.io/badge/Status-Complete-green)]()
+[![Status](https://img.shields.io/badge/Status-Preliminary-orange)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ## Executive Summary
