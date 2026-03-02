@@ -1,10 +1,12 @@
-# X Algorithm Research: Premium Account Preferences
+# X Algorithm Research: Premium Account Preferences (2023 Open Source Version)
 
 ## Summary
 
-This research examines X (formerly Twitter)'s open-source algorithm repository to identify potential biases favoring premium subscribers in the "For You" feed. While X has made portions of their recommendation algorithm public, the analysis reveals several algorithmic components that explicitly provide preferential treatment to premium accounts.
+This research examines X (formerly Twitter)'s **2023 open-source algorithm repository** to identify potential biases favoring premium subscribers in the "For You" feed. While X made portions of their recommendation algorithm public in March 2023, the analysis reveals several algorithmic components that explicitly provide preferential treatment to premium accounts.
 
-**Key Finding:** The algorithm contains multiple explicit mechanisms for boosting premium/blue verified accounts, contradicting claims of algorithmic neutrality.
+**Key Finding:** The 2023 open-source algorithm contains multiple explicit mechanisms for boosting premium/blue verified accounts, contradicting claims of algorithmic neutrality.
+
+**Note:** This analysis is based on the March 2023 open-source release (github.com/twitter/the-algorithm). **Important Update**: Analysis of the current X algorithm repository (xai-org/x-algorithm) suggests these explicit bias mechanisms may have been eliminated in favor of transformer-based ML predictions without hardcoded premium preferences.
 
 The system creates a pay-to-participate conversation ecosystem where financial status, not content quality or engagement, determines visibility across all forms of social interaction 
 
@@ -910,6 +912,29 @@ While X open-sourced algorithm portions, analysis shows:
 X's algorithm systematically favors premium subscribers through explicit mechanisms.
 
 Evidence contradicts neutrality claims, demonstrates subscription-based content visibility.
+
+---
+
+## Comparison with Current Algorithm (2024)
+
+### Analysis of xai-org/x-algorithm Repository
+
+Analysis of the current X algorithm repository reveals significant architectural differences from the 2023 version:
+
+**Key Changes:**
+- **No explicit premium boost mechanisms found**
+- **Architecture shift**: Rust-based implementation vs 2023 Scala/Java
+- **ML-first approach**: Grok transformer predictions replace hand-engineered features
+- **Uniform weighting**: Engagement predictions combined with consistent weights regardless of author status
+
+**Evidence of Elimination:**
+- No hardcoded strings like "Blue-verified account boost"  
+- README states: "eliminated every single hand-engineered feature"
+- IneligibleSubscriptionFilter handles access control, not preferential ranking
+- Phoenix scorer uses ML predictions without verification-specific logic
+
+**Implications:**
+The current algorithm appears to have moved away from explicit premium account bias toward a transformer-based approach that may provide more neutral content ranking. However, indirect bias could still exist through training data or model behavior not visible in the source code.
 
 ---
 

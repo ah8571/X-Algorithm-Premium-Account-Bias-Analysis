@@ -1,6 +1,6 @@
-# X Algorithm Premium Account Bias Analysis
+# X Algorithm Premium Account Bias Analysis (2023 Version)
 
-**Independent technical analysis revealing systematic algorithmic bias favoring X (Twitter) premium subscribers**
+**Independent technical analysis revealing systematic algorithmic bias favoring X (Twitter) premium subscribers in the 2023 open-source algorithm release**
 
 [![Research](https://img.shields.io/badge/Research-Technical%20Analysis-blue)](analysis/X_Algorithm_Premium_Account_Research.md)
 [![Status](https://img.shields.io/badge/Status-Preliminary-orange)]()
@@ -8,9 +8,11 @@
 
 ## Summary
 
-This repository contains a comprehensive technical analysis of X's open-source algorithm repository, revealing multiple systematic mechanisms that provide preferential treatment to premium (blue verified) subscribers in content ranking and visibility.
+This repository contains a comprehensive technical analysis of X's **March 2023 open-source algorithm repository**, revealing multiple systematic mechanisms that provide preferential treatment to premium (blue verified) subscribers in content ranking and visibility.
 
-**Key Discovery:** X's algorithm implements a **multi-tiered privilege system** that gives premium accounts compounding advantages at every stage of content processing, effectively creating a pay-to-participate social ecosystem.
+**Key Discovery:** The 2023 algorithm implements a **multi-tiered privilege system** that gives premium accounts compounding advantages at every stage of content processing, effectively creating a pay-to-participate social ecosystem.
+
+**Important Note:** This analysis specifically examines the March 2023 open-source release (github.com/twitter/the-algorithm). Current X algorithm implementations may differ significantly from these findings.
 
 ## Findings
 
@@ -39,9 +41,9 @@ This repository contains a comprehensive technical analysis of X's open-source a
 ## Research Methodology
 
 **Technical Approach:**
-- Systematic source code analysis of X's open-source algorithm repository
-- Pattern recognition across ranking, scoring, and candidate generation systems
-- Deep-dive examination of parameter configuration and boost application logic
+- Systematic source code analysis of X's March 2023 open-source algorithm repository
+- Pattern recognition across ranking, scoring, and candidate generation systems in the 2023 codebase
+- Deep-dive examination of parameter configuration and boost application logic from the public release
 
 **Attribution:**
 - **Primary Research & Analysis:** Claude Sonnet 4 (Anthropic AI)
@@ -233,7 +235,7 @@ if (scoringData.tweetFromBlueVerifiedAccountBoostApplied) {
 
 ## Implications
 
-This research provides technical evidence that X's "For You" algorithm systematically favors premium subscribers through:
+This research provides technical evidence that X's 2023 "For You" algorithm systematically favored premium subscribers through:
 
 - **Economic Stratification:** Content visibility tied to subscription status rather than quality
 - **Algorithmic Inequality:** Multi-tier advantage system creating unfair competition
@@ -265,8 +267,9 @@ This research provides technical evidence that X's "For You" algorithm systemati
 
 ## Key References
 
-- **Primary Source:** [X Algorithm Repository](https://github.com/twitter/the-algorithm)
-- **ML Components:** [X Algorithm ML](https://github.com/twitter/the-algorithm-ml)
+- **Primary Source:** [X Algorithm Repository (2023)](https://github.com/twitter/the-algorithm)
+- **ML Components:** [X Algorithm ML (2023)](https://github.com/twitter/the-algorithm-ml)
+- **Algorithm Version:** March 2023 Open Source Release
 - **Analysis Date:** March 1, 2026
 
 ## License
